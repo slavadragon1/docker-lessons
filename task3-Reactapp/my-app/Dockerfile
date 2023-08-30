@@ -14,4 +14,4 @@ COPY . .
 
 RUN npm run build
 
-RUN nginx
+CMD [ "nginx -s reload" ]
